@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+    <title>SHOWS</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <header>
+        <nav class="nav-principal">
+            <ul>
+                <li>
+                    <a href="./Home.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="./shows.html" class="nav-ativo">SHOWS</a>
+                </li>
+
+                <li>
+                    <a href="#">ARTISTAS</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="./anitta.html">ANITTA</a>
+                        </li>
+
+                        <li>
+                            <a href="./eltonJohn.html">ELTON JOHN</a>
+                        </li>
+
+                        <li>
+                            <a href="./marshmello.html">MARSHMELLO</a>
+                        </li>
+
+                        <li>
+                            <a href="./jamesArthur.html">JAMES ARTHUR</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="./contato.html">CONTATO</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Formulário escolha de shows -->
+    <main>
+
+        <h1 class="titulo">ESCOLHA SEU SHOW</h1>
+
+        <section>
+
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <!-- CHAVE API do INDIANO -->
+                <input type="hidden" name="accessKey" value="acd322fd-ac73-4ac1-b180-0079a19e3a26">
+
+                <div class="container">
+
+                    <!-- Início coleta de dados do cliente -->
+                    <div class="campo">
+                        <input type="text" name="$nome" id="nome" required>
+                        <label for="nome">Nome *</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="text" name="$email" id="email" required>
+                        <label for="email">Email *</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="text" name="$telefone" id="telefone" required>
+                        <label for="telefone">Telefone *</label>
+                    </div>
+
+                    <div class="campo">
+                        <input type="text" name="$rg" id="rg" required>
+                        <label for="rg">RG *</label>
+                    </div>
+                    <!-- Fim coleta de dados do cliente -->
+
+                    <!-- Início escolha do show -->
+                    <h3 class="sizeCantores">Escolha seu show *</h3>
+                    <div class="row">
+                        <div class="radio">
+                            <input type="radio" name="$grupo" id="anitta" value="anitta"> ANITTA
+                            <br>
+                            <input type="radio" name=$grupo id="marshmello" value="marshmello"> MARSHMELLO
+                        </div>
+
+                        <div class="radio">
+                            <input type="radio" name="$grupo" id="james" value="james"> JAMES ARTHUR
+                            <br>
+                            <input type="radio" name="$grupo" id="john" value="john"> ELTON JOHN
+                        </div>
+                    </div>
+                    <!-- Fim escolha do show -->
+                </div>
+
+
+                <div class="container">
+
+                    <!-- Início escolha do local onde vai ocorrer o show  -->
+                    <label class="sizeLocal" for="local">Local do Show *</label>
+                    <div class="opcoes" required>
+
+                        <select class="opcoes" name="local" id="local">
+                            <option name="$royal" value="royal">Royal Palm Hall</option>
+                            <option name="$parque" value="parque">Parque de Eventos de Extrema-MG</option>
+                            <option name="$allianz" value="allianz">Allianz Parque</option>
+                        </select>
+
+                    </div>
+                    <!-- Fim escolha do local onde vai ocorrer o show  -->
+
+                    <!-- Início dados do endereço do local onde vai ocorrer o show -->
+                    <div class="campo campo-cep">
+                        <input type="text" id="cep" required>
+                        <label for="cep">CEP *</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="campo">
+                            <input type="text" id="endereco" required>
+                            <label for="endereco">Rua</label>
+                        </div>
+                        <div class="campo">
+                            <input type="text" id="bairro" required>
+                            <label for="bairro">Bairro</label>
+                        </div>
+                        <div class="campo">
+                            <input type="text" id="cidade" required>
+                            <label for="cidade">Cidade</label>
+                        </div>
+                        <div class="campo">
+                            <input type="text" id="estado" required>
+                            <label for="estado">Estado</label>
+                        </div>
+                    </div>
+                    <!-- Fim dados do endereço do local onde vai ocorrer o show -->
+
+                    <div class="botao">
+                        <button type="submit">CONFIRMAR</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Rodapé (MARIA) -->
+    <footer>
+        <div class="foot-img">
+            <img src="./img/insta.png" alt="" height=30>
+            <img src="./img/tt.png" alt="" height=30>
+            <p class="text-footer">HYPE MUSIC</p>
+        </div>
+
+    </footer>
+
+</body>
+<script src="/js/showAPI.js" defer></script>
+
+</html>

@@ -1,0 +1,108 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* PALETA DE CORES */
+:root {
+    --rosinha: #F000BE;
+    --azulzinho: #010326;
+    --laranjinha: #FA5116;
+    --roxinho: #7E02C2;
+}
+
+
+/* CONFIG GERAL */
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: var(--azulzinho);
+}
+
+/* INDIVIDUAL */
+
+/* ------------- */
+/*      HOME     */
+/* ------------- */
+
+.container {
+    display: inline-block;
+    position: relative;
+}
+
+/* #img {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 750px;
+} */
+
+/* Definindo a imagem como plano de fundo do título */
+.cabecalho {
+    background-image: url(../img/image1.png);
+    margin-top: 60px;
+    margin-bottom: 80px;
+    width: 100%;
+    height: 750px;
+}
+
+.texto {
+    padding-top: 150px;
+    text-align: center;
+    font-size: 180px;
+    color: #fff;
+    text-shadow: 0 0 120px #e400d9;
+}
+
+
+.aspas {
+    /* Serve para alterar as caracteristicas das aspas da citação */
+    text-align: center;
+    font-family: 'Oswald';
+    font-style: normal;
+    text-align: center;
+    font-weight: 200;
+    font-size: 150px;
+    line-height: 89px;
+    background: linear-gradient(180deg, #ff00aa 35.08%, #fc761d 65.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.citacao {
+    /* Define as caracteristicas da citação */
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 60px;
+    line-height: 89px;
+    text-align: center;
+    color: #fff;
+}
+
+hr {
+    /* Linha que separa a citação do autor */
+    border: 2px solid #FF28A9;
+    margin-top: 30px;
+    align-content: center;
+    margin-left: 70vh;
+    margin-right: 70vh;
+
+}
+
+.raul {
+    /* Define as caracteristicas do texto do autor */
+    font-family: 'Oswald';
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+
+}

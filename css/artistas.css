@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+/* PALETA DE CORES */
+:root {
+    --rosinha: #F000BE;
+    --azulzinho: #010326;
+    --laranjinha: #FA5116;
+    --roxinho: #7E02C2;
+}
+
+/* CONFIGS GERAIS */
+
+body {
+    background-color: var(--azulzinho);
+}
+
+* {
+    font-family: 'Oswald';
+}
+
+main {
+    margin: 100px;
+}
+
+/*  CONTAINER DE LINHAS*/
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+/* CONFIG DOS TEXTOS */
+.textos {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+    font-size: 20px;
+}
+
+.textos h1 {
+    font-size: 70px;
+}
+
+/* CONFIG DA IMAGEM PRINCIPAL */
+.imagens {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    column-gap: 30px;
+    margin-top: 15px;
+}
+
+.imagens img {
+    cursor: pointer;
+}
+
+/* CONFIG MIC */
+.mic{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

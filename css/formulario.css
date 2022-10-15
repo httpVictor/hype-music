@@ -1,0 +1,186 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* PALETA DE CORES */
+:root {
+    --rosinha: #F000BE;
+    --azulzinho: #010326;
+    --laranjinha: #FA5116;
+    --roxinho: #7E02C2;
+}
+
+/* CONFIG GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: var(--azulzinho);
+}
+
+/* FORMULÁRIO EM GERAL */
+/* Configurações H1 */
+.titulo {
+    font-size: 60px;
+    text-align: center;
+    font-weight: 200;
+    margin: 15px;
+}
+
+/* Container para as sections */
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    margin: auto;
+    justify-content: center;
+}
+
+
+/* Configurações dos campos */
+.campo {
+    margin-bottom: 20px;
+    margin-top: 30px;
+    position: relative;
+    display: flex;
+    /* Colocando o nome do campo na frente do campo */
+    flex-direction: column-reverse;
+    height: 40px;
+}
+
+.campo label {
+    position: relative;
+    bottom: 5px;
+    left: 10px;
+    font-size: 20px;
+    color: white;
+    transition: .5s;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.campo input {
+    position: absolute;
+    background-color: var(--rosinha);
+    width: 100%;
+    height: 4px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    transition: 0.65s;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Quando o foco estiver no input */
+.campo input:focus,
+.campo input:valid {
+    bottom: 5px;
+    height: 100%;
+}
+
+/* Movimento de subida e descida do input */
+.campo input:focus+label,
+.campo input:valid+label {
+    top: -45px;
+}
+
+.campo input:not(:focus)+label .campo input:valid+label {
+    transition: 0.65s;
+}
+
+/* Divisão de colunas dos campos que ficam lado a lado*/
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 4%;
+}
+
+.row div {
+    width: 48%;
+}
+
+/* Configurando o botão */
+button {
+    background: linear-gradient(180deg, #A3088A 0%, #A5006D 0.01%, #76006F 58.85%, #460072 100%);
+    opacity: 0.95;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 140px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.8s;
+}
+
+.botao {
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+/* FIM FORMULÁRIO GERAL */
+
+/* FORMULÁRIO - CONTATO - Victor */
+
+.campo-mensagem {
+    text-align: center;
+}
+
+.campo-mensagem label {
+    font-size: 25px;
+    margin: 10px;
+}
+
+/* INPUT -> MENSAGEM */
+#mensagem {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 180px;
+    width: 100%;
+    background-color: var(--rosinha);
+    text-align: start;
+    align-content: center;
+    resize: none;
+    padding: 5px;
+    font-size: 18px;
+}
+
+/* FIM DO FORMULÁRIO CONTATO */
+
+
+/* FORMULÁRIO SHOW - Letícia */
+.sizeLocal {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.sizeCantores {
+    font-size: 20px;
+    margin-top: 40px;
+    color: var(--rosinha);
+}
+
+.opcoes {
+    background-color: var(--rosinha);
+    width: 700px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.campo-cep{
+margin-top: 60px;
+}
+/* FIM DO FORMULÁRIO SHOW */

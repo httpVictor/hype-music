@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTATO</title>
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="./css/principal.css">
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <header>
+        <nav class="nav-principal">
+            <ul>
+                <li>
+                    <a href="./Home.html">HOME</a>
+                </li>
+
+                <li>
+                    <a href="./shows.html">SHOWS</a>
+                </li>
+
+                <li>
+                    <a href="#">ARTISTAS</a>
+                    <ul class="dropdown">
+                        <li>
+                            <a href="./anitta.html">ANITTA</a>
+                        </li>
+
+                        <li>
+                            <a href="./eltonJohn.html">ELTON JOHN</a>
+                        </li>
+
+                        <li>
+                            <a href="./marshmello.html">MARSHMELLO</a>
+                        </li>
+
+                        <li>
+                            <a href="./jamesArthur.html">JAMES ARTHUR</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="./contato.html"class="nav-ativo">CONTATO</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <!-- PRINCIPAL -->
+    <main>
+
+        <h1 class="titulo">CONTATO</h1>
+
+        <section>
+
+            <form action="https://api.staticforms.xyz/submit" method="post" class="container">
+                <!-- CHAVE API do INDIANO -->
+                <input type="hidden" name="accessKey" value="acd322fd-ac73-4ac1-b180-0079a19e3a26">
+                <div class="campo">
+                    <input type="text" id="nome" name="$nome" required>
+                    <label for="nome">Nome *</label>
+                </div>
+    
+                <div class="campo">
+                    <input type="email" id="email" name="$email" required>
+                    <label for="email">Email *</label>
+                </div>
+    
+                <div class="row">
+                    <div class="campo">
+                        <input type="text" id="assunto" name="$assunto" required>
+                        <label for="assunto">Assunto *</label>
+                    </div>
+    
+                    <div class="campo">
+                        <input type="text" id="telefone" name="$telefone" required>
+                        <label for="telefone">Telefone *</label>
+                    </div>
+                </div>
+    
+                <div class="campo-mensagem">
+                    <label for="mensagem">MENSAGEM</label>
+                    <textarea name="$mensagem" id="mensagem" cols="1" rows="40" required></textarea>
+                </div>
+    
+                <div class="botao">
+                    <button type="submit">ENVIAR</button>
+                </div>
+            </form>
+        
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="foot-img">
+            <img src="./img/insta.png" alt="" height=30>
+            <img src="./img/tt.png" alt="" height=30>
+            <p class="text-footer">HYPE MUSIC</p>
+        </div>
+        
+
+    </footer>
+
+</body>
+
+</html>

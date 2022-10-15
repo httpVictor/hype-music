@@ -1,0 +1,155 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+/* PALETA DE CORES */
+:root {
+    --rosinha: #F000BE;
+    --azulzinho: #010326;
+    --laranjinha: #FA5116;
+    --roxinho: #7E02C2;
+}
+
+/* CONFIG GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+html,
+body {
+    height: 100%;
+    background: var(--azulzinho);
+}
+
+footer{
+    margin-top: 80px;
+}
+
+
+/* INDIVIDUAL */
+
+/* Colocando o texto na página, deixando ele centralizado, 
+mudando a fonte etc */
+.nav-ativo{
+color: var(--laranjinha);
+}
+.nav-principal {
+    display: block;
+    padding: 50px 0 0 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+/* Aqui já começa a alterar a disposição dos componentes, 
+pra ficarem alinhados na horizontal */
+ul li {
+    list-style: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0 30px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* O hover faz com que o texto mude de cor ao passar o mouse por cima */
+li a {
+    color: white;
+}
+
+li a:hover {
+    background: linear-gradient(180deg, #ff00aa 35.08%, #fc761d 65.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 1.6px #ff0080;
+
+
+}
+
+/* Aqui os tópicos são inseridos dentro do menu, mas não estão visíveis
+por enquanto */
+ul li ul {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 3px;
+    padding-left: 0;
+    left: 5;
+    display: none;
+    background: linear-gradient(180deg, #A3088A 0%, #A5006D 0.01%, #30034B 100%);
+    opacity: 0.95px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.658);
+
+}
+
+
+/* Já aqui, o dropdown aparece ao passar o mouse por cima do menu */
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+    min-width: 30px;
+    padding-top: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-right: 60px;
+    transition-duration: 1.5s;
+
+}
+
+
+/* Aqui os componentes do dropdown são organizados, com margens 
+internas e alinhamento; os textos de dentro também mudam de cor 
+quando o mouse passa por cima */
+ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    border-style: none;
+    font-family: 'Passion One', cursive;
+    color: #fff;
+
+}
+
+/* Essas linhas fazem o texto brilhar, através do text-shadow,
+basicamente uma sombra que deixa ele neon */
+ul li ul li a:hover {
+    text-shadow: 0 0 1px #ffd900;
+    text-decoration: underline;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li ul li a {
+    transition: all 5.0 ease;
+}
+
+
+.foot-img{
+    text-align: center;
+    padding-top: 20px;
+    background: linear-gradient(180deg, rgba(166, 0, 131, 0) 0%, rgba(150, 0, 119, 0.76) 60.94%, #d602a8c3 91.67%);
+    opacity: 0.48px;
+
+}
+
+.foot-img img:hover{
+    cursor: pointer;
+}
+
+.text-footer {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    display: block;
+}
+
